@@ -1127,3 +1127,48 @@ footer h3{
     font-size:.9rem;
   }
 }
+@media(max-width:520px){
+
+  .contact-box{
+    width:92% !important;
+    padding:34px 18px !important;
+    overflow:hidden !important;
+  }
+
+  .contact form{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:18px !important;
+  }
+
+  .contact input,
+  .contact select,
+  .contact textarea{
+    width:100% !important;
+    max-width:100% !important;
+    height:auto !important;
+    min-height:68px !important;
+    padding:18px 22px !important;
+    border-radius:24px !important;
+    font-size:1rem !important;
+    display:block !important;
+  }
+
+  .contact input[type="date"]{
+    width:100% !important;
+    min-width:0 !important;
+    max-width:100% !important;
+    appearance:none !important;
+    -webkit-appearance:none !important;
+  }
+
+  .contact textarea{
+    min-height:140px !important;
+  }
+
+  .contact button{
+    width:100% !important;
+    max-width:100% !important;
+    grid-column:auto !important;
+  }
+}
