@@ -1,8 +1,9 @@
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 const siteLoader = document.getElementById("siteLoader");
+const orderForm = document.getElementById("orderForm");
 
-if(menuBtn && navLinks){
+if (menuBtn && navLinks) {
   menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
@@ -15,21 +16,21 @@ if(menuBtn && navLinks){
 }
 
 window.addEventListener("load", () => {
-  if(siteLoader){
+  if (siteLoader) {
     setTimeout(() => {
       siteLoader.classList.add("hide");
-    }, 900);
+    }, 700);
   }
 });
 
 const revealElements = document.querySelectorAll(".reveal");
 
-function revealOnScroll(){
+function revealOnScroll() {
   revealElements.forEach(el => {
     const elementTop = el.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    if(elementTop < windowHeight - 80){
+    if (elementTop < windowHeight - 80) {
       el.classList.add("active");
     }
   });
@@ -37,7 +38,6 @@ function revealOnScroll(){
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
-const orderForm = document.getElementById("orderForm");
 
 if (orderForm) {
   orderForm.addEventListener("submit", async function (e) {
@@ -63,7 +63,7 @@ if (orderForm) {
       if (response.ok) {
         window.location.href = "thankyou.html";
       } else {
-        alert("Something went wrong. Please try again or message us on WhatsApp.");
+        alert("Something went wrong. Please message us on WhatsApp instead.");
         if (submitButton) {
           submitButton.disabled = false;
           submitButton.textContent = "Request Design";

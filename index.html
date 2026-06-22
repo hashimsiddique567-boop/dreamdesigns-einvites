@@ -6,10 +6,17 @@
 
   <title>DreamDesigns E-Invites</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
+<body>
+
+<div class="site-loader" id="siteLoader">
+  <div class="loader-logo">DD</div>
+  <p>DreamDesigns E-Invites</p>
+</div>
 
 <header class="header">
   <nav class="navbar">
@@ -24,6 +31,7 @@
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#rsvp">RSVP</a></li>
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#payment">Payment</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -108,27 +116,27 @@
   </div>
 
   <div class="gallery-grid">
-    <a href="images/nikkah.jpg" class="gallery-card nikkah reveal" target="_blank">
+    <a href="nikkah.jpg" class="gallery-card nikkah reveal" target="_blank">
       <span>Nikkah Floral Collection</span>
     </a>
 
-    <a href="images/walima.jpg" class="gallery-card walima reveal" target="_blank">
+    <a href="walima.jpg" class="gallery-card walima reveal" target="_blank">
       <span>Walima Luxury Collection</span>
     </a>
 
-    <a href="images/baraat.jpg" class="gallery-card baraat reveal" target="_blank">
+    <a href="baraat.jpg" class="gallery-card baraat reveal" target="_blank">
       <span>Baraat Gold Collection</span>
     </a>
 
-    <a href="images/video.jpg" class="gallery-card video reveal" target="_blank">
+    <a href="video.jpg" class="gallery-card video reveal" target="_blank">
       <span>Video Invitation Design</span>
     </a>
 
-    <a href="images/photo.jpg" class="gallery-card photo reveal" target="_blank">
+    <a href="photo.jpg" class="gallery-card photo reveal" target="_blank">
       <span>Photo Invitation Design</span>
     </a>
 
-    <a href="images/custom.jpg" class="gallery-card custom reveal" target="_blank">
+    <a href="custom.jpg" class="gallery-card custom reveal" target="_blank">
       <span>Custom Bespoke Design</span>
     </a>
   </div>
@@ -308,9 +316,9 @@
     </details>
   </div>
 </section>
+
 <section class="payment-security" id="payment">
   <div class="payment-card reveal">
-
     <span class="section-label">Payment & Security</span>
 
     <h2>Safe, Simple Payments</h2>
@@ -320,7 +328,6 @@
     </p>
 
     <div class="payment-options">
-
       <div class="payment-option">
         <span>✓</span>
         <div>
@@ -336,7 +343,6 @@
           <p>A standard, trusted UK payment method arranged privately.</p>
         </div>
       </div>
-
     </div>
 
     <p class="payment-note">
@@ -346,7 +352,6 @@
     <a href="https://wa.me/447871081646" class="btn-gold" target="_blank">
       Message on WhatsApp
     </a>
-
   </div>
 </section>
 
@@ -355,8 +360,7 @@
     <span class="section-label">Start Your Order</span>
     <h2>Let’s Create Your Dream Invitation</h2>
 
-    <form id="orderForm" action="https://formspree.io/f/mbdvrpny" method="POST"></form>
-        <input type="hidden" name="_next" value="https://dreamdesigns-einvites.vercel.app/thankyou.html">
+    <form id="orderForm" action="https://formspree.io/f/mbdvrpny" method="POST">
       <input type="hidden" name="_subject" value="New DreamDesigns E-Invites Order">
 
       <input type="text" name="name" placeholder="Your Name" required>
@@ -407,7 +411,6 @@
 
 <footer>
   <div class="footer-line"></div>
-
   <div class="footer-watermark">DD</div>
 
   <h3>DreamDesigns E-Invites</h3>
@@ -421,6 +424,7 @@
     <a href="#collections">Collections</a>
     <a href="#gallery">Gallery</a>
     <a href="#pricing">Pricing</a>
+    <a href="#payment">Payment</a>
     <a href="#contact">Contact</a>
   </div>
 
