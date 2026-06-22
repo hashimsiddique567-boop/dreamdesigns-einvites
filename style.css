@@ -1268,3 +1268,117 @@ footer h3{
   text-decoration:none;
   font-weight:700;
 }
+.offers{
+  padding:100px 8%;
+  background:#fffaf4;
+  text-align:center;
+}
+
+.offers-card{
+  max-width:1050px;
+  margin:auto;
+  background:rgba(255,255,255,.9);
+  border:1px solid rgba(184,139,60,.25);
+  border-radius:34px;
+  padding:65px;
+  box-shadow:0 35px 110px rgba(80,55,25,.12);
+}
+
+.offers-card h2{
+  font-family:'Playfair Display',serif;
+  font-size:3.5rem;
+  color:#b88b3c;
+  margin-bottom:35px;
+}
+
+.offers-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin-bottom:35px;
+}
+
+.offer-box{
+  background:#fffaf4;
+  border:1px solid rgba(184,139,60,.25);
+  border-radius:26px;
+  padding:35px 28px;
+}
+
+.offer-box h3{
+  font-family:'Playfair Display',serif;
+  font-size:2.4rem;
+  color:#b88b3c;
+  margin-bottom:12px;
+}
+
+.offer-box p{
+  color:#665b51;
+  line-height:1.7;
+  margin-bottom:12px;
+}
+
+.offer-box small{
+  color:#8f7b5c;
+  font-weight:600;
+}
+
+.terms-box{
+  max-width:760px;
+  margin:35px auto 0;
+  text-align:left;
+  background:#3f332b;
+  color:white;
+  border-radius:26px;
+  padding:35px;
+}
+
+.terms-box h3{
+  color:#d4aa55;
+  margin-bottom:18px;
+  font-size:1.35rem;
+}
+
+.terms-box ul{
+  padding-left:20px;
+}
+
+.terms-box li{
+  margin-bottom:12px;
+  line-height:1.6;
+  color:#f3eadf;
+}
+
+.offers-note{
+  margin-top:28px;
+  color:#8a6a2f;
+  font-weight:700;
+  line-height:1.7;
+}
+
+@media(max-width:700px){
+  .offers{
+    padding:75px 5%;
+  }
+
+  .offers-card{
+    padding:38px 22px;
+    border-radius:26px;
+  }
+
+  .offers-card h2{
+    font-size:2.35rem;
+  }
+
+  .offers-grid{
+    grid-template-columns:1fr;
+  }
+
+  .offer-box{
+    padding:28px 22px;
+  }
+
+  .terms-box{
+    padding:28px 22px;
+  }
+}
